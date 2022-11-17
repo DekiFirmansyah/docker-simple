@@ -1,12 +1,12 @@
 FROM openjdk:8-jdk-alpine
-MAINTAINER Noprianto <noprianto@polinema.ac.id>
+MAINTAINER Dekifirmansyah <dekifirmansyah99@gmail.com>
 RUN mkdir -p /app
 WORKDIR /app
 
-COPY Aritmatika.java /app
+COPY Main.java /app
 
 #compile file java
-RUN javac Aritmatika.java
+RUN javac Main.java
 
 #running java
-CMD ["java","Aritmatika"]
+CMD ["java","Main"]
